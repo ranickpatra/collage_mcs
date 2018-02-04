@@ -13,18 +13,18 @@ int main() {
   int i, interval;
   float a, b, steps, sum=0, *y, integral;
 
-  printf("Enter upper limit: ");
-  scanf("%f", &a);
   printf("Enter lower limit: ");
+  scanf("%f", &a);
+  printf("Enter upper limit: ");
   scanf("%f", &b);
   printf("Enter intervals: ");
   scanf("%d", &interval);
 
 
   y = (float *) malloc(sizeof(float) * (interval + 1));
-  steps = (a - b) / interval;
+  steps = (b - a) / interval;
   for (i = 0; i <= interval; i++)
-    y[i] = f(b + i * steps);
+    y[i] = f(a + i * steps);
 
   sum = y[0] + y[interval];
   for (i = 1; i < interval; i++)
