@@ -3,7 +3,7 @@
 
 
 float f(float x) {
-  return x*x;
+  return (4*x - 3*x*x);
 }
 
 
