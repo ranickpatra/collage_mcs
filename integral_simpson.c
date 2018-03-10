@@ -1,17 +1,11 @@
 #include <stdio.h>
-#include <math.h>
 #include <stdlib.h>
 
 
-double toRadiun(float deg)
+double fx(double x)
 {
-  return deg * 3.141592 / 180;
-}
-
-double fx(double deg)
-{
-  double val = sin(toRadiun(deg));
-  return val*val;
+  
+  return 3*x*x + 4*x;
 }
 
 int main()
