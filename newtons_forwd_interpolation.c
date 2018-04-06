@@ -41,21 +41,16 @@ int main()
 	printf("Enter the value of x to be found\n");
 	scanf("%d", &x);
 
-	i=0;
-	while (ax[i] <= x) {
-		printf("%d\n", i);
-		i++;
-	}
-	i--;
+	
 
-	p = (x - ax[i]) / ((float)(ax[1] - ax[0]));
-	yp = ay[i][0];
+	p = (x - ax[0]) / ((float)(ax[1] - ax[0]));
+	yp = ay[0][0];
 
 	for(j=1;j<n-i; j++)
 	{
 		nr *= p-j+1;
 		dr *= j;
-		yp += nr*ay[i][j]/dr;
+		yp += nr*ay[0][j]/dr;
 	}
 
 	printf("\nY is: %f\n", yp);
