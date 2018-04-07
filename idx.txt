@@ -1,1 +1,8 @@
-h
+weddls.c
+newtons_forwd_interpolation.c
+newtons_backword_interpolation.c
+lagranges_interpolarion.c
+integral_trapizoidal.c
+integral_simpson.c
+bisection.c
+
