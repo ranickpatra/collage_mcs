@@ -46,7 +46,7 @@ int main()
 	p = (x - ax[0]) / ((float)(ax[1] - ax[0]));
 	yp = ay[0][0];
 
-	for(j=1;j<n-i; j++)
+	for(j=1;j<n; j++)
 	{
 		nr *= p-j+1;
 		dr *= j;
